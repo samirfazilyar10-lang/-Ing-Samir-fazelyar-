@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="fa" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,20 +10,38 @@ body{
 font-family:sans-serif;
 background:#f5f5f5;
 text-align:center;
-padding-top:50px;
+padding:40px 15px;
+margin:0;
 }
 
 .box{
-max-width:400px;
+max-width:420px;
 margin:auto;
 background:white;
 padding:30px;
-border-radius:20px;
-box-shadow:0 0 15px rgba(0,0,0,0.1);
+border-radius:25px;
+box-shadow:0 0 20px rgba(0,0,0,0.1);
+}
+
+.profile{
+width:120px;
+height:120px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:20px;
+border:4px solid #eee;
 }
 
 h1{
+margin-bottom:10px;
+font-size:32px;
+color:#222;
+}
+
+p{
+color:#666;
 margin-bottom:30px;
+font-size:16px;
 }
 
 a{
@@ -34,6 +52,11 @@ border-radius:15px;
 text-decoration:none;
 color:white;
 font-size:20px;
+transition:0.3s;
+}
+
+a:hover{
+transform:scale(1.03);
 }
 
 .call{
@@ -47,6 +70,16 @@ background:#25D366;
 .location{
 background:#1565C0;
 }
+
+.website{
+background:#6A1B9A;
+}
+
+.footer{
+margin-top:25px;
+font-size:14px;
+color:#888;
+}
 </style>
 </head>
 
@@ -54,10 +87,17 @@ background:#1565C0;
 
 <div class="box">
 
+<!-- عکس پروفایل -->
+<img src="profile.jpg" alt="Samir Fazelyar" class="profile">
+
 <h1>Samir Fazelyar</h1>
 
+<p>
+خدمات انترنت • فروش • پشتیبانی
+</p>
+
 <a class="call" href="tel:+93799709269">
-📞 تماس
+📞 تماس مستقیم
 </a>
 
 <a class="whatsapp" href="https://wa.me/93794129129">
@@ -65,8 +105,16 @@ background:#1565C0;
 </a>
 
 <a class="location" href="https://maps.app.goo.gl/qfr6CD8ryAexf2AJA">
-📍 لوکیشن
+📍 لوکیشن شاپ
 </a>
+
+<a class="website" href="https://samirfazilyar10-lang.github.io/-Ing-Samir-fazelyar-/">
+🌐 وبسایت
+</a>
+
+<div class="footer">
+© 2026 Samir Fazelyar
+</div>
 
 </div>
 
