@@ -1,66 +1,110 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Samir Fazelyar</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700&display=swap" rel="stylesheet">
+
 <style>
-body{
-font-family:sans-serif;
-background:#f5f5f5;
-text-align:center;
-padding:40px 15px;
+
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-.box{
-max-width:420px;
-margin:auto;
-background:white;
-padding:30px;
-border-radius:25px;
-box-shadow:0 0 20px rgba(0,0,0,0.1);
+body{
+font-family:'Vazirmatn',sans-serif;
+background:#f5f5f5;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+min-height:100vh;
+padding:20px;
 }
+
+/* باکس اصلی */
+
+.box{
+width:100%;
+max-width:400px;
+
+background:white;
+
+padding:35px 25px;
+
+border-radius:30px;
+
+text-align:center;
+
+box-shadow:
+0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* لوگو */
+
+.logo{
+width:170px;
+margin-bottom:25px;
+}
+
+/* عکس پروفایل */
 
 .profile{
 width:120px;
 height:120px;
+
 border-radius:50%;
 object-fit:cover;
+
+border:4px solid #f1f1f1;
+
 margin-bottom:20px;
-border:4px solid #eee;
 }
+
+/* اسم */
 
 h1{
-margin-bottom:10px;
-font-size:32px;
+font-size:30px;
 color:#222;
+margin-bottom:30px;
+font-weight:700;
 }
 
-p{
-color:#666;
-margin-bottom:30px;
-font-size:16px;
-}
+/* دکمه ها */
 
 a{
-display:block;
+display:flex;
+align-items:center;
+justify-content:center;
+
+gap:10px;
+
 margin:15px 0;
-padding:18px;
-border-radius:15px;
+padding:17px;
+
+border-radius:18px;
+
 text-decoration:none;
-color:white;
-font-size:20px;
+
+font-size:18px;
+font-weight:600;
+
 transition:0.3s;
+
+color:white;
 }
 
-a:hover{
-transform:scale(1.03);
-}
+/* رنگ دکمه ها */
 
 .call{
-background:#d32f2f;
+background:#e53935;
 }
 
 .whatsapp{
@@ -68,18 +112,35 @@ background:#25D366;
 }
 
 .location{
-background:#1565C0;
+background:#1976d2;
 }
 
-.website{
-background:#6A1B9A;
+/* افکت هاور */
+
+a:hover{
+transform:translateY(-3px);
+opacity:0.92;
 }
 
-.footer{
-margin-top:25px;
-font-size:14px;
-color:#888;
+/* موبایل */
+
+@media(max-width:500px){
+
+.box{
+padding:30px 20px;
 }
+
+h1{
+font-size:26px;
+}
+
+a{
+font-size:16px;
+padding:15px;
+}
+
+}
+
 </style>
 </head>
 
@@ -87,34 +148,28 @@ color:#888;
 
 <div class="box">
 
+<!-- لوگو -->
+<img src="logo.png" alt="Logo" class="logo">
+
 <!-- عکس پروفایل -->
 <img src="profile.jpg" alt="Samir Fazelyar" class="profile">
 
 <h1>Samir Fazelyar</h1>
 
-<p>
-خدمات انترنت • فروش • پشتیبانی
-</p>
-
+<!-- تماس -->
 <a class="call" href="tel:+93799709269">
 📞 تماس مستقیم
 </a>
 
+<!-- واتساپ -->
 <a class="whatsapp" href="https://wa.me/93794129129">
 💬 واتساپ
 </a>
 
+<!-- لوکیشن -->
 <a class="location" href="https://maps.app.goo.gl/qfr6CD8ryAexf2AJA">
 📍 لوکیشن شاپ
 </a>
-
-<a class="website" href="https://samirfazilyar10-lang.github.io/-Ing-Samir-fazelyar-/">
-🌐 وبسایت
-</a>
-
-<div class="footer">
-© 2026 Samir Fazelyar
-</div>
 
 </div>
 
